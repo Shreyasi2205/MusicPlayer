@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+    <!--Begining of head section--> 
+    <head>
+        <title>Music Player</title>
+        <!--Linking the CSS stylesheet using extrenal CSS-->
+	 <link rel="stylesheet" type="text/css" href="style.css">
+	 <!--Font Awesome script for using icons from font awesome-->
+	 <script src="https://kit.fontawesome.com/677b168518.js" crossorigin="anonymous"></script>
+	 <!--Adds responsiveness to the website-->
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <!--End of head section-->
+    <body>
+        <!-- Beginning of header section -->
+        <header class="topnav">
+            <!-- Add your logo image here -->
+            <a href="home-screen.html"><img id="logo" src="images/music-logo.png" alt="Your Logo"></a>
+            
+            <!-- adding Favourites text -->
+            <div id="text">
+                Favourites
+            </div>
+                <!-- search bar -->
+                <div class="search-container">
+                    <form action="" id="search-bar">
+                        <!-- adding search bar button -->
+                        <button>
+                            <svg viewBox="0 0 1024 1024">
+                                <path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path>
+                            </svg>
+                          </button>
+                          <!-- adding search text bar here  -->
+                        <input type="text" placeholder="Search" name="search">
+                        <!-- adding microphone icone inside the search bar  -->
+                        <i class="fa fa-microphone microphone-icon"></i>
+                    </form>
+                </div>
+                <!-- adding bell icon i.e notification icon to the right -->
+                <div id="bell-icon">
+                    <i class='fa fa-bell icon' style='color: white'></i>
+                </div>
+                <!-- adding profile icon -->
+                <div id="profile-icon">
+                    <!-- <i class="fa-solid fa-user icon"></i> -->
+                    <img src="images/Photo.jpg">
+                </div>
+        </header>
+        <!--Main Section-->
+    <main>
+    	<!--Artist Template-->
+    	<div id="artist-template">
+    		<div id="artist-image" style="background-image: url(images/artist-1.jpeg);">
+    		</div><!--Artist Details
+      >-->
+      <div id="artist-details">
+      	     <!--Artist Title-->
+      	     <div id="artist-title">
+      	     	<div>
+      	     	   <b>Pratik Kuhad</b>
+      	     	   <br/>
+      	     	   <artist-type>Pop Artist</artist-type>
+      	         </div>
+      	     	<followers>96.7k followers</followers>
+      	      </div>
+              <!--End of Artist Title-->
+              <!--Artist Intro-->
+      	     <div id="artist-intro">
+                  Swedish pop star Tove Styrke is during fall ‘20 part of successful music TV-show ”Så Mycket Bättre” where she is doing some covers of other Swedish artists. She is now also working hard in the studio preparing for releasing her first new original music in a few years during first part of ‘21.
+      	     </div>
+      	     <!--End of Artist Intro-->
+      	     <!--Miscellaneous Buttons-->
+      	      <div id="artist-buttons">
+      	 	<div id="playall-button">
+      	 		Play All
+      	 	</div>
+      	 	<div id="follow-button">
+      	 		Follow
+      	 	</div>
+      	 </div>
+      	 <div id="tracks">
+      	 	247 Tracks | 128 Albums
+      	 </div>
+      	 <!--End of miscellaeous buttons-->
+      	 </div>
+         <!--End of artist details-->
+    	</div>
+    	<!--End of artist template-->
+
+    	<!--Begining of artist songs-->
+    	<div id="artist-songs">
+    		<!--Song 1-->
+    		<div id="song">
+    			<div id="song-number">
+    			    01
+    			    <img src="Images/artist-album.png" alt="album image">
+    			    <div id="song-details">
+    			    	Sway
+    			    	<br/>
+    			    	<author>Tove Styrke</author>
+    			    </div>
+    		    </div>
+    			
+    			<div id="icons">
+    				<i class="far fa-heart"></i>
+    				<i class="fas fa-plus"></i>
+    			</div>
+    		</div>
+    		<!--End of Song 1-->
+    		<!--Song 2-->
+    		<div id="song">
+    			<div id="song-number">
+    			    02
+    			    <img src="Images/artist-album.png" alt="album image">
+    			    <div id="song-details">
+    			    	Mistakes
+    			    	<br/>
+    			    	<author>Tove Styrke</author>
+    			    </div>
+    		    </div>
+    			
+    			<div id="icons">
+    				<i class="far fa-heart"></i>
+    				<i class="fas fa-plus"></i>
+    			</div>
+    		</div>
+    		<!--End of Song 2-->
+    		<!--Song 3-->
+    		<div id="song">
+    			<div id="song-number">
+    			    03
+    			    <img src="Images/artist-album.png" alt="album image">
+    			    <div id="song-details">
+    			    	Say My Name 
+    			    	<br/>
+    			    	<author>Tove Styrke</author>
+    			    </div>
+    		    </div>
+    			
+    			<div id="icons">
+    				<i class="far fa-heart"></i>
+    				<i class="fas fa-plus"></i>
+    			</div>
+    		</div>
+    		<!--End of Song 3-->
+    		<!--Song 4-->
+    		<div id="song">
+    			<div id="song-number">
+    			    04
+    			    <img src="Images/artist-album.png" alt="album image">
+    			    <div id="song-details">
+    			    	On The Low
+    			    	<br/>
+    			    	<author>Tove Styrke</author>
+    			    </div>
+    		    </div>
+    			
+    			<div id="icons">
+    				<i class="far fa-heart"></i>
+    				<i class="fas fa-plus"></i>
+    			</div>
+    		</div>
+    		<!--End of Song 4-->
+    		<!--Song 5-->
+    		<div id="song">
+    			<div id="song-number">
+    			    05
+    			    <img src="Images/artist-album.png" alt="album image">
+    			    <div id="song-details">
+    			    	Change My Mind
+    			    	<br/>
+    			    	<author>Tove Styrke</author>
+    			    </div>
+    		    </div>
+    			
+    			<div id="icons">
+    				<i class="far fa-heart"></i>
+    				<i class="fas fa-plus"></i>
+    			</div>
+    		</div>
+    		<!--End of Song 5-->
+    		<!--Song 6-->
+    		<div id="song">
+    			<div id="song-number">
+    			    06
+    			    <img src="Images/artist-album.png" alt="album image">
+    			    <div id="song-details">
+    			    	I Lied
+    			    	<br/>
+    			    	<author>Tove Styrke</author>
+    			    </div>
+    		    </div>
+    			
+    			<div id="icons">
+    				<i class="far fa-heart"></i>
+    				<i class="fas fa-plus"></i>
+    			</div>
+    		</div>
+    		<!--End of Song 6-->
+    		<!--Song 7-->
+    		<div id="song">
+    			<div id="song-number">
+    			    07
+    			    <img src="Images/artist-album.png" alt="album image">
+    			    <div id="song-details">
+    			    	Vibe
+    			    	<br/>
+    			    	<author>Tove Styrke</author>
+    			    </div>
+    		    </div>
+    			
+    			<div id="icons">
+    				<i class="far fa-heart"></i>
+    				<i class="fas fa-plus"></i>
+    			</div>
+    		</div>
+    	</div>
+    	<!--End of Song 7-->
+    </main>
+    <!--End of main section-->
+     <!--Begining of Aside Section-->
+     <aside>
+    	<div id="aside-header-1">
+    		Similar Artists
+    		<x>View All</x>
+    	</div>
+        <!--Similar artist-->
+    	<div id="similar-artist">
+    		<div id="artist-img"></div>
+    		<div id="song-details">
+    			Taylor Swift
+    			<br/>
+    	    <author>Pop Artist</author>
+    	    </div>
+    	    <i class="fas fa-ellipsis-h"></i>
+    	</div>
+
+    	<div id="similar-artist">
+    		<div id="artist-img"></div>
+    		<div id="song-details">
+    			Taylor Swift
+    			<br/>
+    	    <author>Pop Artist</author>
+    	    </div>
+    	    <i class="fas fa-ellipsis-h"></i>
+    	</div>
+
+    	<div id="similar-artist">
+    		<div id="artist-img"></div>
+    		<div id="song-details">
+    			Taylor Swift
+    			<br/>
+    	    <author>Pop Artist</author>
+    	    </div>
+    	    <i class="fas fa-ellipsis-h"></i>
+    	</div>
+        <!--End of Similar artist-->
+    	<div id="aside-header-2">
+    		Recently Played
+    		<x>View All</x>
+    	</div>
+        <!--Recently Played Songs-->
+        <!--Song 1-->
+    	<div id="song">
+    			<div id="song-number">
+    			    01
+    			    <img src="Images/artist-album.png" alt="album image">
+    			    <div id="song-details">
+    			    	Sway
+    			    	<br/>
+    			    	<author>Tove Styrke</author>
+    			    </div>
+    		    </div>
+    			
+    			<div id="icons">
+    				<i class="far fa-heart"></i>
+    			</div>
+    		</div>
+    		<!--ENd of song 1-->
+    		<!--Song 2-->
+    		<div id="song">
+    			<div id="song-number">
+    			    02
+    			    <img src="Images/artist-album.png" alt="album image">
+    			    <div id="song-details">
+    			    	Mistakes
+    			    	<br/>
+    			    	<author>Tove Styrke</author>
+    			    </div>
+    		    </div>
+    			
+    			<div id="icons">
+    				<i class="far fa-heart"></i>
+    			</div>
+    		</div>
+    		<!--End of song 2-->
+    		<!--Song 3-->
+    		<div id="song">
+    			<div id="song-number">
+    			    03
+    			    <img src="Images/artist-album.png" alt="album image">
+    			    <div id="song-details">
+    			    	Say My Name 
+    			    	<br/>
+    			    	<author>Tove Styrke</author>
+    			    </div>
+    		    </div>
+    			
+    			<div id="icons">
+    				<i class="far fa-heart"></i>
+    			</div>
+    		</div>
+    		<!--End of song 3-->
+    		<!--Song 4-->
+    		<div id="song">
+    			<div id="song-number">
+    			    04
+    			    <img src="Images/artist-album.png" alt="album image">
+    			    <div id="song-details">
+    			    	On The Low
+    			    	<br/>
+    			    	<author>Tove Styrke</author>
+    			    </div>
+    		    </div>
+    			
+    			<div id="icons">
+    				<i class="far fa-heart"></i>
+    			</div>
+    		</div>
+    		<!--End of song 4-->
+    		<!--Song 5-->
+    		<div id="song">
+    			<div id="song-number">
+    			    05
+    			    <img src="Images/artist-album.png" alt="album image">
+    			    <div id="song-details">
+    			    	Change My Mind
+    			    	<br/>
+    			    	<author>Tove Styrke</author>
+    			    </div>
+    		    </div>
+    			
+    			<div id="icons">
+    				<i class="far fa-heart"></i>
+    			</div>
+    		</div>
+    		<!--End of song 5-->
+    		<!--End of recently played songs-->
+    </aside>
+    <!--End of aside-->
+    <footer>
+        <!-- The bootom music bar which pops up while we play the music -->
+        <div id="music-bar">
+            <!-- music icon -->
+            <div id="music-icon">
+                <img src="images/latest-release-2.png" alt="music-icon">
+            </div>
+            <!-- End of Music icon -->
+            <!-- Beginning of music title -->
+            <div id="music-title">
+                <b>evemore (feat. Bon Iver)</b>
+                <div id="favourite">
+                    <i class="far fa-heart" aria-hidden="true"></i>
+                </div>
+                <div id="remove">
+                    <i class="fas fa-ban" aria-hidden="true"></i>
+                </div>
+                <br>
+                <artist id="music-player-title-artist">Taylor Swift</artist>
+            </div>
+            <!-- End of Music title -->
+            <!-- Begining of Play Buttons -->
+            <div id="play-buttons">
+                <i class="fas fa-random" aria-hidden="true"></i>
+                <i class="fas fa-backward" aria-hidden="true"></i>
+                <i class="fas fa-pause-circle" aria-hidden="true"></i>
+                <i class="fas fa-forward" aria-hidden="true"></i>
+                <i class="fas fa-undo-alt" aria-hidden="true"></i>
+            </div>
+            <!-- End of play buttons -->
+            <!-- Music Start Time -->
+            <div id="start-time">0:00</div>
+            <!-- End of Music start time -->
+            <!-- music end time -->
+            <div id="end-time">5:04</div>
+            <!-- End of Music end time -->
+            <!-- Beginning of the progress bar -->
+            <div id="progress-bar">
+                <div id="circle">
+                    <i class="fas fa-circle" aria-hidden="true"></i>
+                </div>
+            </div>
+            <!-- End of progress bar -->
+            <!-- Miscellaneous icons -->
+            <div id="queue">
+                <i class="fas fa-bars" aria-hidden="true"></i>
+            </div>
+            <div id="volume">
+                <i class="fas fa-volume-up" aria-hidden="true"></i>
+            </div>
+            <div id="progress-bar-volume">
+                <div id="circle-volume">
+                    <i class="fas fa-circle" aria-hidden="true"></i>
+                  </div>
+            </div>
+            <!-- End of miscellaneous icons -->
+        </div>
+        <!-- End of music bar -->
+    </footer>
+    <!-- End of footer section -->
+    </body>
+</html>
